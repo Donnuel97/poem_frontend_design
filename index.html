@@ -7,6 +7,7 @@
         
         <!----======== CSS ======== -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/editor.css">
         
         <!----===== Boxicons CSS ===== -->
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -16,6 +17,8 @@
         <title>Editor Page</title>
     </head>
     <body>
+ <!-------- Top Navigation bar starts here ------------>
+
         <header class="header">
             <div class="logo">
              
@@ -34,7 +37,10 @@
               </div>
             </div>
           </header>
-          
+<!-------- / Top Navigation bar ends here ------------>
+
+
+<!-------- Side Navigation bar starts here ------------>
           <nav class="sidebar close">
             <header>
                 <div class="image-text">
@@ -65,7 +71,7 @@
                         </li>
     
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="list.html">
                                 <i class='bx bx-cabinet icon' ></i>
                                 <span class="text nav-text">My Poem</span>
                             </a>
@@ -126,7 +132,13 @@
             </div>
     
         </nav>
+<!-------- / Side Navigation bar ends here ------------>
+
+
+
         <div class="container">
+
+  <!-------- Editor starts here ------------>
           <div class="editor_container">
             <div class="options">
               <!-- Text Format -->
@@ -218,8 +230,13 @@
               </div>
               
             </div>
+            <!-------- Textarea starts here ------------>
             <div id="text-input" contenteditable="true"></div>
+            <!-------- Textarea ends here ------------>
           </div>
+<!-------- Editor Ends here ------------>
+
+<!-------- right side bar starts here ------------>
         <div class="sidebarright">
           <div class="balance">
               
@@ -259,7 +276,9 @@
       
       
           </div>
+<!-------- right side bar ends here ------------>
       </div>
+
     <script src="js/editor.js"></script>
     <script src="js/script.js"></script>
     </body>
